@@ -12,5 +12,9 @@ public interface UserService {
 
 	User getUserByEmail(String name);
 
+	void deleteUser(User user);
+
+	boolean isExists(long id);
+
 
 }

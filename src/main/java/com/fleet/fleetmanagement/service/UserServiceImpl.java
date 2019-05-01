@@ -38,4 +38,16 @@ public class UserServiceImpl implements UserService {
 		return userRepository.findByEmailIgnoreCase(name);
 	}
 
+	@Override
+	public void deleteUser(User user) {
+
+		userRepository.deleteById(user.getId());
+	}
+
+	@Override
+	public boolean isExists(long id) {
+		return userRepository.existsById(id);
+	}
+
+
 }
