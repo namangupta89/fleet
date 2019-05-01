@@ -12,7 +12,7 @@ public interface UserService {
 
 	User getUserByEmail(String name);
 
-	void deleteUser(User user);
+	void deleteUser(long id);
 
 	boolean isExists(long id);
 
